@@ -7,7 +7,7 @@
 ## Build
 
 ```
-$ docker build -t docker-libemoji .
+$ docker build -t emojigen/docker-libemoji .
 ```
 
 ## License
