@@ -6,7 +6,7 @@ jobs:
     working_directory: ~/workspace
     environment:
       DOCKER_OWNER: emojigen
-      DOCKER_IMAGE: docker-libemoji
+      DOCKER_IMAGE: cpp
       DOCKER_TAG: stretch
     steps:
       - setup_remote_docker:
