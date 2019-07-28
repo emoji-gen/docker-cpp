@@ -1,5 +1,5 @@
 ## Dockerfile for libemoji
-[![CircleCI](https://circleci.com/gh/emoji-gen/docker-libemoji/tree/master.svg?style=shield)](https://circleci.com/gh/emoji-gen/docker-libemoji/tree/master)
+[![CircleCI](https://circleci.com/gh/emoji-gen/docker-cpp/tree/master.svg?style=shield)](https://circleci.com/gh/emoji-gen/docker-cpp/tree/master)
 
 :whale: Dockerfile for [libemoji](https://github.com/emoji-gen/libemoji)
 
