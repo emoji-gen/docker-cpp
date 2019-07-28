@@ -1,12 +1,12 @@
-## Dockerfile for libemoji
+## Dockerfile for C++ project
 [![CircleCI](https://circleci.com/gh/emoji-gen/docker-cpp/tree/master.svg?style=shield)](https://circleci.com/gh/emoji-gen/docker-cpp/tree/master)
 
-:whale: Dockerfile for [libemoji](https://github.com/emoji-gen/libemoji)
+:whale: Dockerfile for C++ project
 
 ## Build
 
 ```
-$ docker build -t emojigen/docker-libemoji .
+$ docker build -t emojigen/cpp .
 ```
 
 ## License
