@@ -12,11 +12,11 @@ jobs:
       - setup_remote_docker:
           version: 18.09.3
           docker_layer_caching: false
-      - checkout
       - run:
-          name: Install Bash
+          name: Install packages
           command: |
-            apk add -U -q --no-progress bash
+            apk add -U -q --no-progress git bash openssh-client
+      - checkout
       - run:
           name: Build
           command: docker build -t $DOCKER_OWNER/$DOCKER_IMAGE:latest .
