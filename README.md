@@ -4,6 +4,8 @@
 The docker image is used to build [libemoji](https://github.com/emoji-gen/libemoji) project written by C++,
 and it contains gcc as a C++ compiler and clang-format as a formatter.
 After the master branch is updated, it is compiled on CircleCI and automatically publish to DockerHub.
+<br>
+<br>
 
 ## Installed packages
 The docker image is based Debian 10 Buster, and these packages below are installed.
