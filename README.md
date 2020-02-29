@@ -3,6 +3,12 @@
 
 :whale: Dockerfile for C++ project
 
+## Installed packages
+The docker image is based Debian 10 Buster, and these packages below are installed.
+
+- gcc
+- clang-format
+
 ## Build
 
 ```

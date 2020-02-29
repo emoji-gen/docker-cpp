@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:buster-slim
 
 RUN ["/bin/bash", "-c", "\
   set -eux -o pipefail \
@@ -9,13 +9,13 @@ RUN ["/bin/bash", "-c", "\
       curl wget gnupg ca-certificates \
     \
     && curl -fsSL https://yum.dockerproject.org/gpg | apt-key add - \
-    && echo 'deb http://apt.llvm.org/stretch/ llvm-toolchain-stretch-8 main' >> /etc/apt/sources.list  \
-    && echo 'deb-src http://apt.llvm.org/stretch/ llvm-toolchain-stretch-8 main' >> /etc/apt/sources.list \
+    && echo 'deb http://apt.llvm.org/buster/ llvm-toolchain-buster-9 main' >> /etc/apt/sources.list  \
+    && echo 'deb-src http://apt.llvm.org/buster/ llvm-toolchain-buster-9 main' >> /etc/apt/sources.list \
     && wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - \
     && apt-get -o Acquire::Check-Valid-Until=false update \
-    && apt-get install -y clang-format-8 \
+    && apt-get install -y clang-format-9 \
     && rm -f /usr/bin/clang-format \
-    && ln -s /usr/bin/clang-format-8 /usr/bin/clang-format \
+    && ln -s /usr/bin/clang-format-9 /usr/bin/clang-format \
     && clang-format --version \
     \
     && rm -rf /tmp/build \

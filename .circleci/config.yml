@@ -2,15 +2,15 @@ version: 2
 jobs:
   build:
     docker:
-      - image: docker:17.11.0-ce
+      - image: docker:18.09.3
     working_directory: ~/workspace
     environment:
       DOCKER_OWNER: emojigen
       DOCKER_IMAGE: cpp
-      DOCKER_TAG: stretch
+      DOCKER_TAG: buster
     steps:
       - setup_remote_docker:
-          version: 17.11.0-ce
+          version: 18.09.3
           docker_layer_caching: true
       - checkout
       - run:
